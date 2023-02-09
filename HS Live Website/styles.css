@@ -1,6 +1,6 @@
 *{
     /* box-sizing:border-box; */
-    margin:0;
+    margin: 0;
     padding:0;
     font-family: 'Kumbh Sans', sans-serif ;
 }
@@ -35,6 +35,7 @@
   /* The sidebar links */
   .sidebar a {
     /* padding: 8px 8px 8px 32px; */
+  
     text-decoration: none;
     font-size: 25px;
     color: #818181;
@@ -65,9 +66,11 @@ background-size: 100%;
   
   /* The button used to open the sidebar */
   .openbtn {
-    font-size: 30px;
+
+    margin-left: 1130px;
+    font-size: 40px;
     cursor: pointer;
-    background-color: #111;
+    background-color: rgb(0, 0, 0);
     color: white;
     /* padding-left: 100px;
     padding-right: 100px; */
@@ -87,8 +90,12 @@ background-size: 100%;
   
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
   #main {
-    transition: margin-right .5s; /* If you want a transition effect */
-    padding: 20px;
+    /* transition: margin-right 55s; If you want a transition effect */
+    /* position: center;
+     */
+
+
+     padding: 100px ;
   }
   
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -98,7 +105,8 @@ background-size: 100%;
   }
   
 
-.navbar_container{
+.navbar_container
+{
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -133,7 +141,7 @@ background-size: 100%;
 .navbar_menu{
     display: flex;
     align-items: center;
-    list-style: none; 
+    list-style: none;
     text-align: center;
 
     
@@ -154,8 +162,9 @@ background-size: 100%;
 
 .navbar_btn{
     display: flex;
+    position: sticky;
     justify-content: center;
-    align-items: right;
+    align-items: center;
     padding: 0 1rem;
     width:100%;
 }
@@ -229,8 +238,14 @@ background-size: 100%;
         height: 50vh;
         font-size: 1.6rem;
     }
+    #appimg {
+      height: 50px;
+      
+    }
+
     #navbar__logo{
         padding-left: 25px;
+        
     }
     .navbar_toggle .bar{
         width: 25px;
@@ -282,12 +297,20 @@ background-size: 100%;
 }
 
 
+.speading 
+{
+  background: black;
+    background: linear-gradient(to right, #161616, black);
+    padding: 50px 0;
+}
 .hero{
     background: black;
     background: linear-gradient(to right, #161616, black);
-    padding: 200px 0;
+    padding: 50px 0;
 }
 .hero__container{
+
+  /* tab-size: 2; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -299,11 +322,45 @@ background-size: 100%;
     padding: 30px;
 }
 
-.hero__heading{
+.hero__heading
+{
     font-size: 100px;
-    margin-bottom: 24px;
-    color: white;
+    margin-bottom: 0px;
+    background: #ee0979;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  
+    background: linear-gradient(to right, #ff6a00, #ee0979); 
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -mo-text-fill-color: transparent;
+    text-align: center;
 
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 50%; */
+  padding-left: 360px;
+}
+
+.heading2
+{
+    font-size: 100px;
+    margin-bottom: 0px;
+    color: white;
+    text-align: center;
+
+}
+
+.hero_white
+{
+  font-size: 100px;
+    margin-bottom: 0px;
+    color: white;
 }
 .hero__heading span{
 background: #ee0979;  /* fallback for old browsers */
@@ -585,7 +642,8 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 100;
-  background: linear-gradient(to right, #252525, rgb(17, 17, 17));
+  /* background: linear-gradient(to right, #252525, rgb(17, 17, 17)); */
+  background-color: white;
   text-align: center;
 }
 
@@ -595,7 +653,7 @@ body {
   }
 }
 
-/*.team-container {
+.team-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -603,13 +661,13 @@ body {
 
 
   
-  .info-content {
+ .info-content {
     display: none; /*hide the element by default*/
-  /*}
+  }
   
   .info-content.visible {
-    display: block; /*make the element visible
-  }*/
+    display: block; /*make the element visible*/
+  } 
 
 .sports_page{
     display: flex;
@@ -658,7 +716,7 @@ body {
     left:20px;
     right: 20px;
     bottom:20px;
-    background: #2a2b2f;
+    background-image: url(t2.webp);
     border: 2px solid #1e1f23;
     border-radius: 15px;
     box-shadow: 0 20px 50px rgba(255,255,255,0.1);
@@ -694,6 +752,7 @@ body {
 }
 
 .sports_container .sports_card .sports_box .sports_content h2{
+  align-content: top;
     position: absolute;
     top: -10px;
     right: 30px;
@@ -701,18 +760,20 @@ body {
     color: rgba(255,255,255,0.05);
 }
 .sports_container .sports_card .sports_box .sports_content h3{
+  align-content: top;
     font-size: 1.8em;
     color: rgba(255,255,255,0.5);
     z-index: 1;
-    transition: 0.5s;
+    transition: 5s;
 }
 
 .sports_container .sports_card .sports_box .sports_content p{
     font-size: 16px;
-    font-weight: 300;
-    color: white;
+    font-weight: 600;
+    align-content: top;
+    color: rgb(0, 0, 0);
     z-index: 1;
-    transition: 0.5s;
+    transition: 5s;
 }
 
 .dropbtn {
@@ -729,6 +790,8 @@ body {
     border: none;
     cursor: pointer;*/
   }
+
+  
   
   /* Dropdown button on hover & focus */
   .dropbtn:hover, .dropbtn:focus {
@@ -753,7 +816,7 @@ body {
   
   /* Links inside the dropdown */
   .dropdown-content a {
-    color: black;
+    color: rgb(255, 255, 255);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
