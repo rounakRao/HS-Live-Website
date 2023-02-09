@@ -12,7 +12,7 @@
     justify-content: center;
     align-items: center;
     font-size: 20px;
-    position: /*fixed;*/sticky;
+    position: fixed;
     top: 5;
     right: 0;
     z-index: 999;/*1*/
@@ -71,7 +71,7 @@ background-size: 100%;
     font-size: 40px;
     cursor: pointer;
     background-color: rgb(0, 0, 0);
-    color: white;
+    color: rgb(224, 222, 222);
     /* padding-left: 100px;
     padding-right: 100px; */
     border: none;
@@ -90,12 +90,14 @@ background-size: 100%;
   
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
   #main {
-    /* transition: margin-right 55s; If you want a transition effect */
+    transition: margin-right 55s; 
     /* position: center;
      */
 
 
-     padding: 100px ;
+     /* padding: 100px ; */
+
+     margin-left: 40px;
   }
   
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -338,6 +340,37 @@ background-size: 100%;
 
 }
 
+.nothero__heading
+{
+    font-size: 300px;
+    margin-bottom: 0px;
+    background: #ee0979;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  
+    background: linear-gradient(to right, #ff6a00, #ee0979); 
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -mo-text-fill-color: transparent;
+    text-align: center;
+
+}
+.unhero__heading
+{
+    font-size: 150px;
+    margin-bottom: 0px;
+    background: #ee0979;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  
+    background: linear-gradient(to right, #ff6a00, #ee0979); 
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -mo-text-fill-color: transparent;
+    text-align: center;
+
+}
+
 
 .center {
   display: block;
@@ -350,7 +383,7 @@ background-size: 100%;
 .heading2
 {
     font-size: 100px;
-    margin-bottom: 0px;
+    /* margin-bottom: 0px; */
     color: white;
     text-align: center;
 
@@ -362,6 +395,8 @@ background-size: 100%;
     margin-bottom: 0px;
     color: white;
 }
+
+
 .hero__heading span{
 background: #ee0979;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  
@@ -372,6 +407,8 @@ background-size: 100%;
 -webkit-text-fill-color: transparent;
 -mo-text-fill-color: transparent;
 }
+
+
 
 .body{
     color: black;
@@ -643,7 +680,7 @@ body {
   align-items: center;
   border-radius: 100;
   /* background: linear-gradient(to right, #252525, rgb(17, 17, 17)); */
-  background-color: white;
+  background-color: #0f0f0f;
   text-align: center;
 }
 
